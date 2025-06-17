@@ -54,6 +54,15 @@ classDiagram
     Iphone ..|> ReprodutorMusical
     Iphone ..|> AparelhoTelefonico
     Iphone ..|> NavegadorInternet
+
+    class TerminalUI {
+        +start()
+        +menuTelefone()
+        +menuMusica()
+        +menuInternet()
+    }
+
+    TerminalUI --> Iphone : usa
 ```
 
 ## Como compilar e executar o projeto
